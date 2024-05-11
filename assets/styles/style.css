@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", Tahoma, sans-serif;
+    background-color: #657ccf;
+}
+
+main h2 {
+    font-size: 3rem;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+    font-family: "Caveat Brush", Verdana, Tahoma, sans-serif;
+}
+
+main h3 {
+    font-size: 1.5rem;
+}
+
+h4, ul {
+    margin-top: 0;
+}
+
+article h2 {
+    text-shadow: 2px 2px #1B1A17;
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-top: 0;
+}
+
+/* Text Align Center untuk h3 dan h2 dan th */
+article h2,
+#destinasi section h3, 
+#cara-pesan section h3, 
+#lokasi section h3, article > p {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Padding untuk Main */
+article {
+    color: #ffffff;
+    padding: 50px;
+    scroll-margin-top: 3.5rem;
+}
+
+header {
+    display: inline;
+}
+
+footer {
+    padding: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 0.35rem;
+    padding-inline: 4rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+nav ul li.active {
+    background-color: #657ccf;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover, nav a:active {
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 3px solid #000000;
+}
+
+nav img.navbar-logo {
+    height: 3rem;
+    margin: 0.1rem;
+}
+
+nav input.navbar-button {
+    visibility: hidden;
+}
+
+/* Jumbotron */
+.jumbotron {
+    font-size: 20px;
+    padding: 8rem;
+    height: 100vh;
+    background-image: 
+        linear-gradient(180deg, 
+            rgba(27, 26, 23, 1), 
+            rgba(27, 26, 23, 0.8), 
+            rgba(27, 26, 23, 0.3), 
+            rgba(27, 26, 23, 0.6), 
+            rgba(27, 26, 23, 1)),
+        url("../images/Curug_Putri.jpg");
+    background-color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
+}
+
+.jumbotron h1 {
+    font-size: 5rem;
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.jumbotron p {
+    font-size: 30px;
+    padding: 0.2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+article > p {
+    padding-bottom: 25px ;
+    margin-top: -20px;
+    color: #ffffff;
+}
+
+/* Tampilan Destinasi Wisata */
+#destinasi p {
+    color: #ffffff;
+}
+
+/* Tabel Lokasi */
+.location-table td {
+    text-align: left;
+    padding: 5px;
+    line-height: 1.5rem;
+}
+
+.location-table td:first-child {
+    text-align: right;
+}
+
+.location-table th {
+    line-height: 2.2rem;
+    text-decoration: 4px underline solid #000130;
+    text-underline-position: under;
+    font-weight: 600;
+    border-top: 2px dashed #000130;
+}
+
+.location-table tr:first-child > th {
+    border-top-color: transparent;
+}
+
+
+/* Content Member */
+.member h4, 
+.member li, 
+.member p {
+    text-align: justify;
+}
+
+#member .container {
+    justify-content: center;
+}
+
+#member {
+    background-image: 
+        url("../images/Ciremai.jpg");
+    background-color: #657ccf;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.member form {
+    color: #ffffff;
+}
+
+/* Form Member di #member */
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+form > div {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+
+.member .item:first-child, #member h2 {
+    text-shadow: 2px 2px #1B1A17;
+    color: #ffffff;
+}
+
+input#name {
+    text-transform: capitalize;
+}
+
+input#email {
+    text-transform: lowercase;
+}
+
+/* Margin Tabel Lokasi dan Tentang Kami */
+.location-table,
+.about-us-table {    
+    margin: 20px 10px;
+}
+
+/* Content Tentang Kami */
+#tentang-kami .container {
+    justify-content: center;
+}
+
+.about-us-table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.about-us-table td, .about-us-table th {
+    padding: 10px;
+}
+
+.about-us-table tr{
+    line-height: 1.5rem;
+}
+
+.about-us-table td {
+    text-align: left;
+}
+
+.about-us-table tr:first-child th {
+    text-align: center;
+    line-height: 2.2rem;
+    text-decoration: 4px underline solid #ffffff;
+    text-underline-position: under;
+}
+
+.about-us-table tr th {
+    text-align: right;
+    font-weight: 600;
+    
+}
+
+/* Footer */
+footer .social-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .social-media li a {
+    color: #090ca3;
+    font-size: 3rem;
+}
+
+/* Button */
+button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+
+    background-color: #090ca3;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+button:hover {
+    border: 3px solid transparent;
+    background-color: #000130;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.item > button {
+    padding: 0.5rem 1rem;
+}
+
+/* Tabel umum (table data) */
+table td, table th {
+    vertical-align: top;
+}
+
+/* Gambar untuk Artikel */
+img.how-to-order-image, 
+img.landmark-image,
+img.about-us-image {
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+/* 
+Box Card Container
+Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi 
+*/
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #657ccf;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    flex: 0 1 calc(33.333% - 2rem); /* 33.333% - (2 * gap) */
+    margin-bottom: 2rem; /* Jarak antara baris */
+}
+
+/* Perangkat dengan layar lebar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    .jumbotron p {
+        padding: 0;
+        color: #ffffff;
+    }
+
+    .container section,
+    .container .about-us-item {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1 1 40%;
+    }
+    
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        min-height: 40vh;
+        margin-inline: auto;
+    }
+
+    .item {
+        flex: 0 1 calc(50% - 2rem); /* 50% - (2 * gap) */
+    }
+
+    #destinasi .card,
+    #cara-pesan .card,
+    #lokasi .card,
+    aside #tentang-kami .item {
+        max-width: 50vw;
+    }
+
+    img.about-us-image {
+        object-position: top;
+    }
+}
+
+/* Perangkat dengan layar lebar 768 dan di bawahnya */
+@media screen and (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 3.3rem;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .jumbotron {
+        padding: 0.7rem 2rem 10rem 2rem; /* top right bottom left */
+        height: 100%;
+        background-position: center;
+        background-size: 234%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    #member {
+        background-attachment: scroll;
+    }
+    
+    .container {
+        display: flex;
+        margin: 0 auto;
+        flex-flow:column nowrap;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+
+    .item {
+        flex: 0 1 calc(100% - 2rem); /* 100% - (2 * gap) */
+    }
+
+    #destinasi .card,
+    #cara-pesan .card,
+    #lokasi .card,
+    aside #tentang-kami .card {
+        max-width: 100vw;
+    }
+
+    aside #tentang-kami .card {
+        overflow: auto;
+    }
+
+    table {
+        margin: 20px 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
