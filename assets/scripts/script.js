@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ambil semua elemen menu
     var menuItems = document.querySelectorAll('nav ul li');
 
+    // Hapus kelas active dari semua elemen menu
+    menuItems.forEach(function(item) {
+        item.classList.remove('active');
+    });
+
     // Loop melalui setiap elemen menu
     menuItems.forEach(function(item) {
         // Periksa apakah URL halaman saat ini cocok dengan URL elemen menu
@@ -13,14 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.add('active');
         }
     });
-
-    // Menambahkan keterangan bahwa halaman aktif adalah halaman beranda
-    var homeMenuItem = document.querySelector('nav ul li:first-child');
-    homeMenuItem.classList.add('active');
-    homeMenuItem.innerHTML += '';
 });
 
-// Pencegahan klik kanan untuk melindungi isi content
-document.addEventListener ('contextmenu', function(e) {
+// Pencegahan klik kanan untuk melindungi isi konten
+document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
-})
+});

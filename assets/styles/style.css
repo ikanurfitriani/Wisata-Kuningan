@@ -286,7 +286,7 @@ input#email {
 .about-us-table tr:first-child th {
     text-align: center;
     line-height: 2.2rem;
-    text-decoration: 4px underline solid #ffffff;
+    text-decoration: 4px underline solid #657ccf;
     text-underline-position: under;
 }
 
@@ -355,8 +355,7 @@ table td, table th {
 
 /* Gambar untuk Artikel */
 img.how-to-order-image, 
-img.landmark-image,
-img.about-us-image {
+img.landmark-image{
     width: 100%;
     height: 17rem;
     object-fit: cover;
@@ -365,18 +364,32 @@ img.about-us-image {
     border-radius: 15px;
 }
 
+img.about-us-image {
+    width: 50%;
+    height: 10rem;
+    justify-content: center;
+    object-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
 /* 
 Box Card Container
 Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi 
 */
 .container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-flow: row nowrap;
     gap: 2rem;
     justify-content: space-between;
 }
 
 .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     padding: 20px;
