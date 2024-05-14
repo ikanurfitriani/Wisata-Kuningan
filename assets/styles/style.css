@@ -182,7 +182,7 @@ article > p {
     color: #ffffff;
 }
 
-/* Content Member */
+/* Content Kontak */
 .kontak h4, 
 .kontak li, 
 .kontak p {
@@ -235,7 +235,7 @@ input#email {
     text-transform: lowercase;
 }
 
-/* Margin Tabel Lokasi dan Tentang */
+/* Margin Tentang */
 .about-me-table {    
     margin: 20px 10px;
 }
@@ -350,7 +350,7 @@ img.about-me-image {
 
 /* 
 Box Card Container
-Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi 
+Dipakai oleh Destinasi Wisata, Kuliner dan Penginapan 
 */
 .container {
     display: flex;
