@@ -383,18 +383,19 @@ Dipakai oleh Destinasi Wisata, Kuliner dan Penginapan
 
 /* Perangkat dengan layar lebar 1200px dan di bawahnya */
 @media screen and (max-width: 1200px) {
-    .jumbotron p {
-        padding: 0;
-        color: #ffffff;
+    /* Kode CSS untuk layar dengan lebar maksimum 1200px */
+
+    /* Mengatur tampilan jumbotron pada layar lebar 1200px */
+    .jumbotron {
+        padding: 0.7rem 2rem 10rem 2rem; /* top right bottom left */
+        height: 100%;
+        background-position: center;
+        background-size: 234%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
     }
 
-    .container section,
-    .container .about-us-item {
-        display: flex;
-        flex-flow: column wrap;
-        flex: 1 1 40%;
-    }
-    
+    /* Mengatur tampilan container dan item pada layar lebar 1200px */
     .container {
         display: flex;
         flex-flow: row wrap;
@@ -403,10 +404,12 @@ Dipakai oleh Destinasi Wisata, Kuliner dan Penginapan
         margin-inline: auto;
     }
 
+    /* Mengatur tampilan item pada layar lebar 1200px */
     .item {
         flex: 0 1 calc(50% - 2rem); /* 50% - (2 * gap) */
     }
 
+    /* Mengatur tampilan card pada layar lebar 1200px */
     #destinasi .card,
     #kuliner .card,
     #penginapan .card,
@@ -414,13 +417,17 @@ Dipakai oleh Destinasi Wisata, Kuliner dan Penginapan
         max-width: 50vw;
     }
 
+    /* Mengatur tampilan gambar about-me pada layar lebar 1200px */
     img.about-me-image {
         object-position: top;
     }
 }
 
-/* Perangkat dengan layar lebar 768 dan di bawahnya */
+/* Perangkat dengan layar lebar 768px dan di bawahnya */
 @media screen and (max-width: 768px) {
+    /* Kode CSS untuk layar dengan lebar maksimum 768px */
+
+    /* Mengatur tampilan jumbotron pada layar lebar 768px */
     .jumbotron h1 {
         font-size: 3.3rem;
         color: #ffffff;
@@ -436,22 +443,26 @@ Dipakai oleh Destinasi Wisata, Kuliner dan Penginapan
         background-attachment: scroll;
     }
 
+    /* Mengatur tampilan kontak pada layar lebar 768px */
     #kontak {
         background-attachment: scroll;
     }
-    
+
+    /* Mengatur tampilan container pada layar lebar 768px */
     .container {
         display: flex;
         margin: 0 auto;
-        flex-flow:column nowrap;
+        flex-flow: column nowrap;
         justify-content: space-between;
         align-content: flex-start;
     }
 
+    /* Mengatur tampilan item pada layar lebar 768px */
     .item {
         flex: 0 1 calc(100% - 2rem); /* 100% - (2 * gap) */
     }
 
+    /* Mengatur tampilan card pada layar lebar 768px */
     #destinasi .card,
     #kuliner .card,
     #penginapan .card,
@@ -459,17 +470,19 @@ Dipakai oleh Destinasi Wisata, Kuliner dan Penginapan
         max-width: 100vw;
     }
 
+    /* Mengatur tampilan card tentang pada layar lebar 768px */
     aside #tentang .card {
         overflow: auto;
     }
 
+    /* Mengatur tampilan tabel pada layar lebar 768px */
     table {
         margin: 20px 10px;
     }
 
+    /* Mengatur tampilan navbar pada layar lebar 768px */
     nav {
         display: flex;
         justify-content: space-between;
     }
-
 }
