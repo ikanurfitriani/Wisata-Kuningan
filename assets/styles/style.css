@@ -437,7 +437,7 @@ Dipakai oleh Destinasi Wisata, Kuliner dan Penginapan
     }
 }
 
-/* Perangkat dengan layar lebar 768 dan di bawahnya */
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
 @media screen and (max-width: 768px) {
     .jumbotron h1 {
         font-size: 3.3rem;
@@ -490,10 +490,21 @@ Dipakai oleh Destinasi Wisata, Kuliner dan Penginapan
         justify-content: space-between;
     }
 
-}
+    .card {
+        padding: 10px; /* Mengurangi padding agar konten tidak terlalu melebar */
+    }
 
-/* Perangkat dengan lebar layar 768px dan di bawahnya */
-@media screen and (max-width: 768px) {
+    .item {
+        flex: 0 1 calc(100% - 2rem); /* 100% - (2 * gap) */
+    }
+
+    #destinasi .card,
+    #kuliner .card,
+    #penginapan .card,
+    #kontak .card {
+        height: auto; /* Atur ketinggian card agar sesuai dengan konten */
+    }
+
     nav {
         flex-flow: column nowrap;
         align-items: center;
