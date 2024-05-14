@@ -245,11 +245,15 @@ input#email {
     justify-content: center;
 }
 
+#tentang .container h3 {
+    font-size: 2rem;
+}
+
 .about-me-table {
     width: 100%;
     padding: 0;
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .about-me-table td, .about-me-table th {
@@ -371,6 +375,20 @@ Dipakai oleh Destinasi Wisata, Kuliner dan Penginapan
     background-color: #657ccf;
     overflow: hidden;
     box-sizing: border-box;
+    height: 450px; /* Atur tinggi card sesuai kebutuhan */
+    width: 100%; /* Agar card memenuhi lebar container */
+}
+
+#destinasi .card {
+    height: 650px; /* Atur tinggi card sesuai kebutuhan */
+    width: 100%; /* Agar card memenuhi lebar container */
+}
+
+#kuliner .card,
+#penginapan .card,
+#kontak .card {
+    height: 500px; /* Atur tinggi card sesuai kebutuhan */
+    width: 100%; /* Agar card memenuhi lebar container */
 }
 
 .item {
