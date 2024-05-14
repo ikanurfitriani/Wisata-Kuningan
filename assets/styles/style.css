@@ -246,14 +246,14 @@ input#email {
 }
 
 #tentang .container h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .about-me-table {
     width: 100%;
     padding: 0;
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .about-me-table td, .about-me-table th {
