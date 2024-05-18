@@ -1,19 +1,19 @@
 # Wisata-Kuningan
-A simple website about Kuningan that uses HTML, CSS and Javascript.
+A simple website about Kuningan that uses HTML, CSS and Javascript. This project is the final project, aka the final result of the Dicoding submission.
 
 ## Deployment
 Link: https://wisata-kuningan.vercel.app/
 
-## Keterangan Menu
-- `Beranda`: Muncul pertama kali saat mengakses website.
-- `Destinasi Wisata`: Menampilkan informasi destinasi wisata diantaranya lokasi, jam operasional, harga tiket dan informasi akun sosial media atau wikipedia.
-- `Kuliner`: Menampilan informasi kuliner dengan alamat dan akun sosial media yang dapat dihubungi.
-- `Penginapan`: Menampilkan informasi penginapan dengan alamat dan akun sosial media yang dapat dihubungi.
-- `Kontak`: Menampilkan form untuk menampung segala pertanyaan, saran dan kritik.
-- `Tentang`: Aplikasi menampilkan informasi dari pembuat yaitu informasi tentang saya.
+## Menu Description
+- `Beranda` atau `Home`: Appears first when accessing the website.
+- `Destinasi Wisata` atau `Tourist Destinations`: Displays tourist destination information including location, operating hours, ticket prices and social media or Wikipedia account information.
+- `Kuliner` atau `Culinary`: Displays culinary information with addresses and social media accounts that can be contacted.
+- `Penginapan` atau `Lodging`: Displays accommodation information with addresses and social media accounts that can be contacted.
+- `Kontak` atau `Contact`: Displays a form to accommodate all questions, suggestions and criticism.
+- `Tentang` atau `About`: The application displays information from the creator i.e. information about me.
 
 ## Screen Capture Website
-Berikut ini adalah hasil screen capture dari Website Wisata Kuningan:
+The following is a screen capture from the Kuningan Tourism Website:
 
 <img src="Screenshot/SS-Website-Wisata-Kuningan.png" alt="SS1" width="650">
 
