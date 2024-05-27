@@ -2,7 +2,7 @@
 A simple website about Kuningan that uses HTML, CSS and Javascript. This project is the final project, aka the final result of the Dicoding submission.
 
 ## Deployment
-Link: https://wisata-kuningan.vercel.app/
+Link: https://wisata-kuningan-by-ika.vercel.app/
 
 ## Menu Description
 - `Beranda` atau `Home`: Appears first when accessing the website.
